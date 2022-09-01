@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <PackageId>Currencyapi</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Benedikt Stoy</Authors>
+    <Company>Everapi GmbH</Company>
+    <PackageTags>Currency;currencyapi;Api;Currency converter;Exchange rates;</PackageTags>
+    <Title>currencyapi</Title>
+    <Description>
+      This client library enables working with currencyapi - https://currencyapi.com/
+      Register here for an Apikey to use the API - https://app.currencyapi.com/register
+      See Github repository here - https://github.com/everapihq/currencyapi-dotnet
+    </Description>
+    <Summary>This is the official NuGet package for currencyapi API.(https://currencyapi.com/)</Summary>
+    <Copyright>Copyright © Everapi GmbH 2022</Copyright>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageIcon>currencyapi-icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://currencyapi.com/</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl> 
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Nullable>enable</Nullable>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="**\*.orig" />
+    <None Include="..\LICENSE.md" Pack="true" PackagePath="LICENSE.md" />
+    <None Include="..\currencyapi-icon.png" Pack="true" PackagePath="currencyapi-icon.png" />
+    <None Include="..\README.md" Pack="true" PackagePath="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Helpers\" />
+    <None Remove="Newtonsoft.Json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+</Project>
