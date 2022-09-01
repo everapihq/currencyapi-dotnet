@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.1": {},
     ".NETStandard,Version=v2.1/": {
-      "currencyapi/1.0.0": {
+      "currencyapi/1.0.2": {
         "runtime": {
           "currencyapi.dll": {}
         }
@@ -15,7 +15,7 @@
     }
   },
   "libraries": {
-    "currencyapi/1.0.0": {
+    "currencyapi/1.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <PackageId>Currencyapi</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.2</Version>
     <Authors>Benedikt Stoy</Authors>
     <Company>Everapi GmbH</Company>
     <PackageTags>Currency;currencyapi;Api;Currency converter;Exchange rates;</PackageTags>

@@ -23,7 +23,7 @@ namespace ipbase.Helpers
         public static string Currencies(string apiKey, string currencies)
         {
             string url;
-            url = BaseUrl + "/info?currencies=" + currencies + "&apikey=" + apiKey;
+            url = BaseUrl + "/currencies?currencies=" + currencies + "&apikey=" + apiKey;
 
             return GetResponse(url);
         }
@@ -31,7 +31,7 @@ namespace ipbase.Helpers
         public static string Latest(string apiKey, string baseCurrency, string currencies)
         {
             string url;
-            url = BaseUrl + "/info?currencies=" + currencies + "&base_currency=" + baseCurrency + "&apikey=" + apiKey;
+            url = BaseUrl + "/latest?currencies=" + currencies + "&base_currency=" + baseCurrency + "&apikey=" + apiKey;
 
             return GetResponse(url);
         }
@@ -39,7 +39,7 @@ namespace ipbase.Helpers
         public static string Historical(string apiKey, string date, string baseCurrency, string currencies)
         {
             string url;
-            url = BaseUrl + "/info?currencies=" + currencies + "&base_currency=" + baseCurrency + "&date=" + date + "&apikey=" + apiKey;
+            url = BaseUrl + "/historical?currencies=" + currencies + "&base_currency=" + baseCurrency + "&date=" + date + "&apikey=" + apiKey;
 
             return GetResponse(url);
         }
@@ -47,7 +47,7 @@ namespace ipbase.Helpers
         public static string Range(string apiKey, string datetimeStart, string datetimeEnd, string accuracy, string baseCurrency, string currencies)
         {
             string url;
-            url = BaseUrl + "/info?currencies=" + currencies + "&base_currency=" + baseCurrency + "&datetime_start=" + datetimeStart + "&datetime_end=" + datetimeEnd + "&accuracy=" + accuracy + "&apikey=" + apiKey;
+            url = BaseUrl + "/range?currencies=" + currencies + "&base_currency=" + baseCurrency + "&datetime_start=" + datetimeStart + "&datetime_end=" + datetimeEnd + "&accuracy=" + accuracy + "&apikey=" + apiKey;
 
             return GetResponse(url);
         }
@@ -55,7 +55,7 @@ namespace ipbase.Helpers
         public static string Convert(string apiKey, string value, string date, string baseCurrency, string currencies)
         {
             string url;
-            url = BaseUrl + "/info?currencies=" + currencies + "&base_currency=" + baseCurrency + "&date=" + date + "&value=" + value + "&apikey=" + apiKey;
+            url = BaseUrl + "/convert?currencies=" + currencies + "&base_currency=" + baseCurrency + "&date=" + date + "&value=" + value + "&apikey=" + apiKey;
 
             return GetResponse(url);
         }

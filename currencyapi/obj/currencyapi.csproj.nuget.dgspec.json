@@ -5,7 +5,7 @@
   },
   "projects": {
     "/Users/benediktstoy/Development/ruby/currencyapi-dotnet/currencyapi/currencyapi.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.2",
       "restore": {
         "projectUniqueName": "/Users/benediktstoy/Development/ruby/currencyapi-dotnet/currencyapi/currencyapi.csproj",
         "projectName": "Currencyapi",

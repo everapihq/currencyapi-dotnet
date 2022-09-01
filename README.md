@@ -18,12 +18,12 @@ Use the instance to call the endpoints
 #### Status
 Returns your current quota
 
-    fx.status()
+    fx.Status()
 
 #### Currencies
 Returns all our supported currencies
 
-    fx.currencies(currencies)
+    fx.Currencies(currencies)
 
   | Parameter | Data type | Mandatory | Description |
   | --- | ----------- | --- | ----------- |
@@ -33,7 +33,7 @@ Returns all our supported currencies
 #### Latest Exchange Rates
 Returns the latest exchange rates. The default base currency is USD.
 
-    fx.latest(base_currency, currencies)    
+    fx.Latest(base_currency, currencies)    
 
 | Parameter | Data type | Mandatory | Description |
 | --- | ----------- | --- | ----------- |
@@ -43,7 +43,7 @@ Returns the latest exchange rates. The default base currency is USD.
 #### Historical Exchange Rates
 Returns the latest exchange rates. The default base currency is USD.
 
-    fx.historical(date, base_currency, currencies)    
+    fx.Historical(date, base_currency, currencies)    
 
 | Parameter | Data type | Mandatory | Description |
 | --- | ----------- | --- | ----------- |
@@ -55,7 +55,7 @@ Returns the latest exchange rates. The default base currency is USD.
 #### Range Historical Exchange Rates
 Returns a range of exchange rates. Generally, we provide data going back to 1999.
 
-    fx.range(datetime_start, datetime_end, accuracy, baseCurrency, currencies)    
+    fx.Range(datetime_start, datetime_end, accuracy, baseCurrency, currencies)    
 
 | Parameter | Data type | Mandatory | Description |
 | --- | ----------- | --- | ----------- |
@@ -69,7 +69,7 @@ Returns a range of exchange rates. Generally, we provide data going back to 1999
 #### Convert Exchange Rates
 Returns calculated values for today or any given date for all currencies.
 
-    fx.convert(value, date, baseCurrency, currencies)
+    fx.Convert(value, date, baseCurrency, currencies)
 
 | Parameter | Data type | Mandatory | Description |
 | --- | ----------- | --- | ----------- |
